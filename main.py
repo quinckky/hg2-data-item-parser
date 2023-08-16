@@ -54,8 +54,17 @@ def get_main_info(id_: int) -> dict | None:
     main_info['Title'] = get_text(main_info['Title ID'])
     image_id = int(category['DisplayImage'])
     
+    #Trailing zeros
+    #Maybe can do it in more consice way but idk i'm lazy
+    if image_id < 10:
+        zero = '00'
+    elif image_id < 100:
+        zero = '0'
+    else:
+        zero = ''
+    
     #You can use allequipmenticons AssetBundle instead, but sometimes items in it doesn't have background
-    main_info['Icon'] = f'http://static.image.mihoyo.com/hsod2_webview/images/broadcast_top/equip_icon/png/{image_id}.png'
+    main_info['Icon'] = f'http://static.image.mihoyo.com/hsod2_webview/images/broadcast_top/equip_icon/png/{zero}{image_id}.png'
     main_info['Rarity'] = int(category['Rarity'])
     main_info['Damage Type'] = DAMAGE_TYPE_NAMES[category['DamageType']] if category_name == 'weapon' else None
     
