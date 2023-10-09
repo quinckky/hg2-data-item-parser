@@ -1,5 +1,5 @@
 # About
-Tool for convert raw item data from [Guns Girl - Houkai Gakuen 2](https://houkai2nd.fandom.com/wiki/Houkai_Gakuen_2_Wiki) into displayable info
+Tool for convert raw item data from [Guns Girl - Houkai Gakuen 2](https://houkai2nd.miraheze.org/wiki/Houkai_Gakuen_2_Wiki) into displayable info
 
 # Usage
 Download data_all using [hg2-downloader](https://dev.s-ul.net/BLUEALiCE/hg2-downloader)
