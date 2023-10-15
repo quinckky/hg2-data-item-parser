@@ -82,8 +82,9 @@ DAMAGE_TYPE_NAMES = {
 }
 
 PROPERTY_NAMES = {
-    '负重': 'Carry Load',
-    '重量': 'Carry Load',
+    '负重': 'Cost',
+    '重量': 'Cost',
+    'Carry Load' : 'Cost',
     '最大等级': 'Max Lvl',
     'Max LV': 'Max Lvl',
     '类型': 'Type',
